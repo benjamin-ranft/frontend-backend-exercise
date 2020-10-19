@@ -10,3 +10,5 @@ export const addTodo = (description, status) =>
 export const deleteToDo = (id) =>
     axios.delete(url + id)
 
+export const putToDo = (id, description, status) =>
+    axios.put(url + id, {id, description, status})

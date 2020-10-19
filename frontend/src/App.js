@@ -7,13 +7,13 @@ import AddTodoPopup from "./components/AddTodoPopup";
 
 export default function App() {
 
-    const [todos, createToDo, removeToDo] = useTodos();
+    const [todos, createToDo, removeToDo, updateToDo] = useTodos();
 
     return (
         <Main>
             <h1>Super Kanban Board</h1>
             <AddTodoPopup onCreateToDo={createToDo}/>
-            <TodoList todos={todos} onRemoveToDo={removeToDo}/>
+            <TodoList todos={todos} onRemoveToDo={removeToDo} onUpdateToDo={updateToDo}/>
         </Main>
     );
 }

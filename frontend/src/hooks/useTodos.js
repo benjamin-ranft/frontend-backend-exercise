@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {addTodo, deleteToDo, getTodos} from '../service/todo-service';
+import {addTodo, deleteToDo, getTodos, putToDo} from '../service/todo-service';
 
 export default function useTodos() {
     const [todos, setTodos] = useState([]);
@@ -19,5 +19,12 @@ export default function useTodos() {
             .then(() => setTodos(todos.filter(todo => todo.id !== id)))
     }
 
-    return [todos,createToDo, removeToDo];
+    const updateToDo = (id, description, status) => {
+        putToDo(id, description, status)
+            .then(response => response.data)
+            .then(data =>setTodos([...todos,data]))
+            //.then(() => setTodos(todos.filter(todo => todo.id !== id && todo.status !== status)));
+    }
+
+    return [todos,createToDo, removeToDo, updateToDo];
 }
