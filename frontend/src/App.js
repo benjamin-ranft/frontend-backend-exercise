@@ -36,8 +36,8 @@ const Main = styled.main`
   margin-right: auto;
     }
     h1 {
-        color: darkred;
-        background: rgba(255,255,255,1);
+        color: white;
+        font-size: 3em;
         padding: 20px;
         border-radius: 10px;
         text-align: center;
