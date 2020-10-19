@@ -32,9 +32,10 @@ const Main = styled.main`
     width: 100px;
     margin-top: 5%;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     }
+    
     h1 {
         color: white;
         font-size: 3em;
@@ -42,9 +43,8 @@ const Main = styled.main`
         border-radius: 10px;
         text-align: center;
         display: block;
-  margin-left: auto;
-  margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 60%;
-       
     }
 `;
