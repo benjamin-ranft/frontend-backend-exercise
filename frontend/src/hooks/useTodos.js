@@ -20,10 +20,11 @@ export default function useTodos() {
     }
 
     const updateToDo = (id, description, status) => {
+
         putToDo(id, description, status)
             .then(response => response.data)
-            .then(data =>setTodos([...todos,data]))
-            //.then(() => setTodos(todos.filter(todo => todo.id !== id && todo.status !== status)));
+            .then(data =>setTodos([...todos.filter(todo => todo.id !== id),data]))
+
     }
 
     return [todos,createToDo, removeToDo, updateToDo];
