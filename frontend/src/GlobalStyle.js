@@ -9,7 +9,6 @@ export default createGlobalStyle`
     margin: 0;
     font-size: 112.5%;
     font-family: sans-serif;
-    background: papayawhip;
 
   }
   

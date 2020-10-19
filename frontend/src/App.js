@@ -11,7 +11,8 @@ export default function App() {
 
     return (
         <Main>
-            <h1>Super Kanban Board</h1>
+            <img src="/images/Rocket.webp" alt="Spaceship"/>
+            <h1>Space Task Board</h1>
             <AddTodoPopup onCreateToDo={createToDo}/>
             <TodoList todos={todos} onRemoveToDo={removeToDo} onUpdateToDo={updateToDo}/>
         </Main>
@@ -21,8 +22,29 @@ export default function App() {
 const Main = styled.main`
     height: 100vh;
     padding: 8px;
-
+    background-image: url("/images/space2.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+     background-size: cover;
+    
+    img{
+    height: 100px;
+    width: 100px;
+    margin-top: 5%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    }
     h1 {
-        color: hotpink;
+        color: darkred;
+        background: rgba(255,255,255,1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+        width: 60%;
+       
     }
 `;

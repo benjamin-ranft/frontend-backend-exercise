@@ -13,7 +13,25 @@ export default function Todo({ id, status, description, onRemoveToDo, onUpdateTo
 }
 
 const StyledTodo = styled.section`
-    background-color: white;
+    background-color: rgba(255,255,255,1);
     border-radius: 10px;
     padding: 10px;
+    color: darkred;
+    
+    button{
+    margin: 5px;
+    border-color: transparent;
+    border-radius: 5px;
+    color: white;
+    background-color: darkred;
+    font-weight: bold;
+    }
+    
+    button:hover{
+    background-color: transparent;
+    border-color: darkred;
+    color: darkred;
+    border-style: solid ;
+    
+    }
 `;

@@ -17,6 +17,6 @@ const StyledContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 3%;
 
 `
-
